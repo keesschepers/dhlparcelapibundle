@@ -1,0 +1,24 @@
+{
+    "name": "keesschepers/dhlparcelapibundle",
+    "type": "symfony-bundle",
+    "description": "DHL Parcel API integration in Symfony2.",
+    "license": "MIT",
+    "keywords": ["dhl", "parcel", "api", "symfony"],
+    "authors": [
+        {
+            "name": "Kees Schepers",
+            "email": "kees@keesschepers.nl"
+        }
+    ],
+    "require": {
+        "php": ">=7.0.0",
+        "symfony/framework-bundle": ">=2.1.0-dev,<3.0-dev"
+    },
+    "autoload": {
+        "psr-0": {
+            "Keesschepers\\DhlParcelApiBundle": ""
+        }
+    },
+    "target-dir": "Keesschepers/DhlParcelApiBundle",
+    "minimum-stability": "dev"
+}
