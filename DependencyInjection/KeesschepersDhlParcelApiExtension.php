@@ -1,6 +1,6 @@
 <?php
 
-namespace Keesschepers\PostcodenlApiBundle\DependencyInjection;
+namespace Keesschepers\DhlParcelApiBundle\DependencyInjection;
 
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\Config\FileLocator;
