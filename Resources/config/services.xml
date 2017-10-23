@@ -5,6 +5,10 @@
     xsi:schemaLocation="http://symfony.com/schema/dic/services http://symfony.com/schema/dic/services/services-1.0.xsd">
 
     <services>
-        <service id="keesschepers_dhl_parcel_api.client" class="Keesschepers\DhlParcelApi\DhlClient" />
+        <service id="keesschepers_dhl_parcel_api.client" class="Keesschepers\DhlParcelApi\DhlClient">
+            <argument>%dhl.api_user%</argument>
+            <argument>%dhl.api_secret%</argument>
+            <argument>%dhl.timeout%</argument>
+        </service>
     </services>
 </container>

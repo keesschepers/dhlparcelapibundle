@@ -18,13 +18,10 @@ class Configuration implements ConfigurationInterface
     public function getConfigTreeBuilder()
     {
         $treeBuilder = new TreeBuilder();
-        $rootNode = $treeBuilder->root('keesschepers_dhlparcel_api');
+        $rootNode = $treeBuilder->root('keesschepers_dhl_parcel_api');
 
         $rootNode
-/*            ->children()
-                ->scalarNode('base_url')
-                    ->isRequired()
-                ->end()
+            ->children()
                 ->scalarNode('timeout')
                     ->isRequired()
                 ->end()
@@ -33,7 +30,7 @@ class Configuration implements ConfigurationInterface
                 ->end()
                 ->scalarNode('api_secret')
                     ->isRequired()
-                    ->end() */
+                    ->end()
             ->end();
 
         return $treeBuilder;
